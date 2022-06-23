@@ -1,0 +1,77 @@
+export const style = {
+  main: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  gallery: {
+    maxWidth: '1806px',
+    height: '100%',
+    width: '100%',
+    gap: '32px',
+    padding: '23px',
+    display: 'grid',
+    '@media (min-width: 0px)': {
+      gridTemplateColumns: 'repeat(1, minmax(0%, 1fr))',
+    },
+    '@media (min-width: 568px)': {
+      gridTemplateColumns: 'repeat(2, minmax(0%, 1fr))',
+    },
+    '@media (min-width: 1200px)': {
+      gridTemplateColumns: 'repeat(3, minmax(0%, 1fr))',
+    },
+    '@media (min-width: 1442px)': {
+      gridTemplateColumns: 'repeat(4, minmax(0%, 1fr))',
+    },
+  },
+  galleryItem: {
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column-reverse',
+    padding: '12.5%',
+    height: '416px',
+    width: '100%',
+    backgroundImage: 'url(/i.png)',
+    backgroundSize: '100% 100%',
+    objectFit: 'fill',
+    borderRadius: '10px',
+  },
+  selectedItem: {
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column-reverse',
+    padding: '12.5%',
+    height: '416px',
+    width: '100%',
+    backgroundImage: 'url(/i.png)',
+    backgroundSize: '100% 100%',
+    objectFit: 'fill',
+    borderRadius: '10px',
+    boxShadow: '0 0 0 7px #4FE24A',
+    '& > .hello': {
+      color: 'blue',
+    },
+  },
+  tagButton: {
+    borderRadius: '20px',
+    color: 'black',
+    backgroundColor: 'white',
+    fontSize: '16px',
+    p: '8px 16px',
+  },
+  name: {
+    fontSize: '40px',
+    fontWeight: 800,
+    mt: '16px',
+  },
+  loadMoreButton: {
+    m: '50px 0',
+    borderRadius: '20px',
+    color: 'black',
+    backgroundColor: 'white',
+    fontSize: '16px',
+    p: '8px 16px',
+  },
+};
